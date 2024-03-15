@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root,
+html,
+body {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #33383c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid #6d7276;
+  width: 474px;
+  min-height: 524px;
+  border-radius: 4px;
+}
+
+.card-content {
+  padding: 1.6rem;
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 3.2rem;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.form-stage {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-stage-line {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+}
+
+.form-stage-indicator {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #33383c;
+}
+.card-description {
+  color: white;
+  text-align: center;
+}
+
+.card-description > p:first-child{
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.card-description > p:last-child{
+  font-size: 1.6rem;
+ color: #868a8c;
+}
+
+.validate-message {
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+.message-list {
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  list-style-position: inside;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.form-text-input {
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  color: white;
+  outline: none;
+  border: 2px solid #6b727a;
+  display: inline-block;
+  background-color: #6b727a;
+}
+
+.form-text-input::placeholder {
+  color: rgb(233, 233, 233);
+}
+
+.form-text-input:focus-visible {
+  border-color: green;
+}
+
+.form-input-name-box {
+  display: flex;
+  column-gap: 12px;
+}
+
+.next-submit-container {
+  display: flex;
+  justify-content: end;
+}
+.next-submit-button {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  background-color: #5ab68a;
+  padding-block: 12px;
+  padding-inline: 16px;
+  border: none;
+  border-radius: 80px;
+}
